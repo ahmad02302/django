@@ -1,0 +1,7 @@
+<ul>
+  {% for meeting in meetings %}
+  <li>{{meeting.title}}</li>
+  {% empty%}
+  <h2>No meetings available at the moment.</h2>
+  {% endfor %}
+</ul>
